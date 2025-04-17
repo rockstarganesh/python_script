@@ -1,0 +1,47 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "55452c1f-0129-45c6-a18b-250b3277bb57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a= int(input(\"enter a number \"))\n",
+    "def is_prime(n):\n",
+    "    if n <= 1:\n",
+    "         return False\n",
+    "    for i in range (2,n):\n",
+    "        if n % i == 0:\n",
+    "             return False\n",
+    "    return True\n",
+    "\n",
+    "if is_prime(a):\n",
+    "    print(a,\" is a prime number\")\n",
+    "else:\n",
+    "    print(a,\"is not a prime number\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2024.02-py310",
+   "language": "python",
+   "name": "conda-env-anaconda-2024.02-py310-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
